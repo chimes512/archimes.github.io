@@ -5,9 +5,17 @@
 <body>
   <div>
     <object>
-      <embed src="./03b3333a1c7e3f0f43135212dc37c90e.swf" width="300" height="300">
+      <embed src="./03b3333a1c7e3f0f43135212dc37c90e.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" height="300" width="300" wmode="opaque" type="application/x-shockwave-flash">
       </embed>
     </object>
     <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+    <script>
+      window.RufflePlayer = window.RufflePlayer || {};
+      window.RufflePlayer.config = {
+          "warnOnUnsupportedContent": false, 
+          "autoplay": "on", 
+          "unmuteOverlay": "hidden"
+      };
+    </script>
   </div>
 </body>
